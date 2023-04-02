@@ -140,6 +140,7 @@ class _TabControllerProviderState extends State<_TabControllerProvider>
       length: widget.pageState._routes.length,
       initialIndex: widget.pageState.index,
       vsync: this,
+      animationDuration: Duration.zero,
     )..addListener(() {
         widget.pageState.index = _controller!.index;
       });
